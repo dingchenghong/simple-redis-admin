@@ -1,0 +1,15 @@
+version: '3'
+services:
+    redis-admin:
+        # image: 镜像名称
+        image: harbor.abc.com/library/redis-admin
+        container_name: redis-admin
+        network_mode: bridge
+        restart: always
+        tty: true
+        ports:
+            - 8089:8080
+        environment:
+            - TZ=Asia/Shanghai
+            - SENTINEL_HOST=192.168.7.15:26379,192.168.7.16:26379,192.168.7.17:26379
+            - SENTINEL_SERVICE_NAME=mymaster-pro

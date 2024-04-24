@@ -1,0 +1,20 @@
+[package]
+name = "simple-redis-admin"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+salvo = { version = "*", features = ["affix", "serve-static"] }
+tokio = { version = "1", features = ["macros"] }
+tera = "1.18"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+futures = "0.3"
+fred = "6.0.0"
+anyhow = "1.0.69"
+clap = { version = "4.1", features = ["derive"]}
+serde = "1.0"
+serde_json = "1.0"
+chrono = "0.4.24"
