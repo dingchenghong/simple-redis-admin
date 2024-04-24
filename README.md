@@ -2,6 +2,8 @@ simple-redis-admin
 
 一个简单的带一个web页面的redis管理工具，项目用到的第三方库：salvo、tera
 
+![webui](https://raw.githubusercontent.com/dingchenghong/simple-redis-admin/main/ui.png)
+
 功能太简单，有需要的朋友，可自行改造
 
 
